@@ -1,0 +1,207 @@
+.debug {
+  position: fixed;
+  top: 4px;
+  padding: 4px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-family: monospace;
+  font-size: 1.6rem;
+}
+
+.castig {
+  position: fixed;
+  top: 50px;
+  padding: 4px;
+  background: rgb(0, 255, 0);
+}
+
+.plm {
+  position: fixed;
+  bottom: 250px;
+  left: 200px;
+  padding: 4px;
+  background-color: rgb(14, 236, 14);
+  color: black;
+}
+
+.plm2 {
+  position: fixed;
+  bottom: 200px;
+  left: 200px;
+  padding: 4px;
+  background-color: rgb(14, 236, 14);
+  color: black;
+}
+
+.plm3 {
+  position: fixed;
+  bottom: 150px;
+  left: 200px;
+  padding: 4px;
+  background-color: rgb(14, 236, 14);
+  color: black;
+}
+
+.plm4 {
+  position: fixed;
+  bottom: 250px;
+  right: 200px;
+  padding: 4px;
+  background-color: rgb(14, 236, 14);
+  color: black;
+}
+
+.plm5 {
+  position: fixed;
+  bottom: 200px;
+  right: 200px;
+  padding: 4px;
+  background-color: rgb(14, 236, 14);
+  color: black;
+}
+
+.plm6 {
+  position: fixed;
+  bottom: 150px;
+  right: 200px;
+  padding: 4px;
+  background-color: rgb(14, 236, 14);
+  color: black;
+}
+
+.balanta {
+  position: fixed;
+  bottom: 20px;
+  left: 350px;
+  padding: 4px;
+  background-color: rgb(14, 236, 14);
+  color: black;
+}
+
+.bal {
+  position: fixed;
+  bottom: 20px;
+  left: 265px;
+  padding: 4px;
+  background-color: rgb(14, 236, 14);
+  color: black;
+}
+
+.betcurrent {
+  position: fixed;
+  bottom: 20px;
+  right: 260px;
+  padding: 4px;
+  background-color: rgb(14, 236, 236);
+  color: black;
+}
+
+.bettext {
+  position: fixed;
+  bottom: 20px;
+  right: 280px;
+  padding: 4px;
+  background-color: rgb(14, 236, 236);
+  color: black;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mosu {
+  position: fixed;
+  background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHZrZzJrYXN2Z242bzVxeDdhdHJ2aHB2ZW90aW4xMTAxaTc1YmRtcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oCvcCdz1NlKBB8qKE6/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 240px;
+  width: 150px;
+}
+
+.slots {
+  position: relative;
+  width: 276.5px;
+  height: 237px;
+  display: flex;
+  justify-content: space-between;
+  padding: 23.7px;
+  background: linear-gradient(45deg, grey 0%, lightgray 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-right: 1px solid rgba(255, 255, 255, 0.6);
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+.slots::before, .slots::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.slots::before {
+  left: 0;
+  transform: translate(-200%, -50%);
+}
+.slots::after {
+  right: 0;
+  transform: translate(200%, -50%);
+}
+@keyframes win1 {
+  0% {
+    background: linear-gradient(45deg, orange 0%, yellow 100%);
+    box-shadow: 0 0 80px orange;
+  }
+  100% {
+    background: linear-gradient(45deg, grey 0%, lightgrey 100%);
+    box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.3);
+  }
+}
+@keyframes win2 {
+  0% {
+    background: linear-gradient(45deg, lightblue 0%, lightgreen 100%);
+    box-shadow: 0 0 80px lightgreen;
+  }
+  100% {
+    background: linear-gradient(45deg, grey 0%, lightgrey 100%);
+    box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.3);
+  }
+}
+.slots.win1 {
+  animation: win1 200ms steps(2, end) infinite;
+}
+.slots.win2 {
+  animation: win2 200ms steps(2, end) infinite;
+}
+.slots .reel {
+  position: relative;
+  width: 79px;
+  height: 237px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  background-image: url(https://pouch.jumpshare.com/preview/_yfWEtZ2gUnleUWyin7iuDbee9fBtenyTV_gN25kFdQT6bxJf5Q--wSH6vUxs6TQihFQzLig-a_HQwGyTdITLpU9x-rDa7eNpOdGof-eC0U);
+  background-position: 0 0;
+  background-repeat: repeat-y;
+}
+.slots .reel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, transparent 30%, transparent 70%, rgba(0, 0, 0, 0.4) 100%);
+  box-shadow: inset 0 0 6px 2px rgba(0, 0, 0, 0.3);
+}/*# sourceMappingURL=style.css.map */
