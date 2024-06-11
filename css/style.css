@@ -191,7 +191,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 3px;
   overflow: hidden;
-  background-image: url(https://github.com/Stelicaim/SanduUrleaCasino/blob/main/slotreel.png?raw=true);
+  background-image: url(https://raw.githubusercontent.com/Stelicaim/SanduUrleaCasino/main/slotreel.png);
   background-position: 0 0;
   background-repeat: repeat-y;
 }
